@@ -74,13 +74,6 @@ const Portfolio = () => {
             <main>
                 <section className="about-me">
                     <div className="about-content">
-                        <Image
-                            src="/Bg.jpg" 
-                            alt="Your Profile Picture"
-                            className="profile-pic"
-                            width={200}
-                            height={200}
-                        />
                         <div className="about-text">
                             <h2>About Me</h2>
                              {/* app/page.js */}
