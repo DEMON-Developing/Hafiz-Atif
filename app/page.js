@@ -85,7 +85,8 @@ const Portfolio = () => {
                 <section className="skills">
                     <h2>My Skills</h2>
                     <div className="skills-list">
-                        <span>HTML & CSS</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
                         <span>JavaScript</span>
                         <span>Python</span>
                         <span>Web Developing</span>
