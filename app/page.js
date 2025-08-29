@@ -59,6 +59,13 @@ const Portfolio = () => {
         <>
             <header className="hero">
                 <div className="hero-content">
+                    <Image
+                            src="/Bg.jpg" 
+                            alt="Your Profile Picture"
+                            className="profile-pic"
+                            width={200}
+                             height={200}
+                         />
                     <h1>Hafiz Atif Salfi</h1>
                     <p>Web Developer</p>
                 </div>

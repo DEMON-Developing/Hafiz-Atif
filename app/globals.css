@@ -20,6 +20,13 @@ body {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/hero-bg.jpg') no-repeat center center/cover;
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Image aur text ke beech thoda fasla */
+}
+
 .hero-content h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 3.5rem;
@@ -30,6 +37,12 @@ body {
 .hero-content p {
   font-size: 1.5rem;
   color: #ccc;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 4px solid #0077b6;
+  object-fit: cover;
 }
 
 /* Main content sections */
@@ -60,12 +73,6 @@ h2 {
   gap: 2rem;
 }
 
-.profile-pic {
-  border-radius: 50%;
-  border: 4px solid #0077b6;
-  object-fit: cover;
-}
-
 .about-text {
   text-align: center;
 }
@@ -84,6 +91,27 @@ h2 {
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease-in-out forwards;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-list span:nth-child(1) { animation-delay: 0.2s; }
+.skills-list span:nth-child(2) { animation-delay: 0.4s; }
+.skills-list span:nth-child(3) { animation-delay: 0.6s; }
+.skills-list span:nth-child(4) { animation-delay: 0.8s; }
+.skills-list span:nth-child(5) { animation-delay: 1s; }
+
+.skills-list span:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Contact form section */
@@ -128,7 +156,7 @@ form button {
 }
 
 form button:hover {
-  background-color: hsl(203, 100%, 30%);
+  background-color: #005f99;
 }
 
 /* Footer */
@@ -168,28 +196,4 @@ footer {
         flex-direction: row;
         text-align: left;
     }
-}
-
-/* Skills section */
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.skills-list span {
-  background: #0077b6;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  
-  /* Smooth transition for hover effect */
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Hover effect */
-.skills-list span:hover {
-  transform: translateY(-5px); /* Skills box ko 5px upar utha dega */
 }
