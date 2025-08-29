@@ -118,10 +118,10 @@ const Portfolio = () => {
                     <a href="https://www.facebook.com/hafiz.atif.salfi?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-facebook"></i>
                     </a>
-                    {/* Gmail Icon */}
+                    {/* Gmail Icon
                     <a href="mailto:salfiatif560@gmail.com" target="_blank" rel="noopener noreferrer">
                         <i className="fa-solid fa-envelope"></i>
-                    </a>
+                    </a> */}
                     {/* Copy Link button */}
                     <button onClick={handleCopyLink} className="copy-link-btn">
                         <i className="fa-solid fa-link"></i>

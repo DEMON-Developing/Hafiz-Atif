@@ -128,7 +128,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #005f99;
+  background-color: hsl(203, 100%, 30%);
 }
 
 /* Footer */
@@ -168,4 +168,28 @@ footer {
         flex-direction: row;
         text-align: left;
     }
+}
+
+/* Skills section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-list span {
+  background: #0077b6;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  
+  /* Smooth transition for hover effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.skills-list span:hover {
+  transform: translateY(-5px); /* Skills box ko 5px upar utha dega */
 }

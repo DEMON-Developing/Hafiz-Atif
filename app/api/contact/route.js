@@ -7,8 +7,8 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'salfiatif560@gmail.com', // Aapki Gmail ID
-            pass: 'mmhn leqm xxjj nrnz' // Yahan App Password daalen
+             user: process.env.EMAIL, // Yahan environment variable use karen
+             pass: process.env.APP_PASSWORD // Yahan environment variable use karen
         }
     });
 
