@@ -77,8 +77,8 @@ const Portfolio = () => {
                         <div className="about-text">
                             <h2>About Me</h2>
                              {/* app/page.js */}
-                           <p>My name is Hafiz Atif Salfi. I am from Kasur, Pakistan. I have a strong passion for programming, web design, and game developing. I am always ready to learn new skills and apply them to real-world projects. This website provides information about my skills and work. Contact me on **salfiatif560@gmail.com**</p>
-                        </div>
+                           <p>My name is Hafiz Atif Salfi. I am from Kasur, Pakistan. I have a strong passion for programming, web design, and game developing. I am always ready to learn new skills and apply them to real-world projects. This website provides information about my skills. Contact me on **salfiatif560@gmail.com**</p>
+                      </div>
                     </div>
                 </section>
                 
