@@ -1,16 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import { Metadata } from 'next';
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: 'Hafiz Atif Salfi | Full Stack Web Developer Portfolio',
@@ -40,34 +28,12 @@ export const metadata = {
     creator: '@your_twitter_handle',
     images: ['https://hafiz-atif.vercel.app/BG.png'],
   },
-  // Font Awesome aur Google Fonts ko yahan add kiya hai
-  links: [
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com',
-    },
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
-      crossOrigin: 'true',
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap',
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
-    },
-  ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
