@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem; /* Image aur text ke beech thoda fasla */
+  gap: 1rem;
 }
 
 .hero-content h1 {
@@ -91,22 +91,29 @@ h2 {
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: bold;
+  
+  /* Initial state and animations */
   opacity: 0;
   transform: translateY(20px);
   animation: slideIn 0.5s ease-in-out forwards;
+  
+  /* Smooth transition for the hover effect */
   transition: transform 0.3s ease-in-out;
 }
 
+/* Staggered animation delay */
 .skills-list span:nth-child(1) { animation-delay: 0.2s; }
 .skills-list span:nth-child(2) { animation-delay: 0.4s; }
 .skills-list span:nth-child(3) { animation-delay: 0.6s; }
 .skills-list span:nth-child(4) { animation-delay: 0.8s; }
 .skills-list span:nth-child(5) { animation-delay: 1s; }
 
+/* Hover effect */
 .skills-list span:hover {
   transform: translateY(-5px);
 }
 
+/* Keyframes for the initial slide-in animation */
 @keyframes slideIn {
   to {
     transform: translateY(0);
