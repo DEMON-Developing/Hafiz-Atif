@@ -60,7 +60,7 @@ const Portfolio = () => {
             <header className="hero">
                 <div className="hero-content">
                     <Image
-                            src="/Bg1.png" 
+                            src="/Bg.jpg" 
                             alt="Your Profile Picture"
                             className="profile-pic"
                             width={200}
