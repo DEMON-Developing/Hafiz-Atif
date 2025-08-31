@@ -22,17 +22,17 @@ export const metadata = {
     description: 'Explore the work and skills of Hafiz Atif Salfi, a web developer and programmer based in Kasur, Pakistan.',
     url: 'https://hafiz-atif.vercel.app',
     siteName: 'Hafiz Atif Salfi Portfolio',
-    images: [
+  images: [
       {
-        url: 'https://hafiz-atif.vercel.app/BG.png',
+        url: 'https://hafiz-atif.vercel.app/BACK1.png',
         width: 800,
         height: 600,
         alt: 'Hafiz Atif Salfi Profile Picture',
       },
     ],
     locale: 'en_US',
-    type: 'website',
-  },
+     type: 'website',
+   },
   twitter: {
     card: 'summary_large_image',
     title: 'Hafiz Atif Salfi | Professional Portfolio',
@@ -40,34 +40,21 @@ export const metadata = {
     creator: '@your_twitter_handle',
     images: ['https://hafiz-atif.vercel.app/BG.png'],
   },
-  // Font Awesome aur Google Fonts ko yahan add kiya hai
-  links: [
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com',
-    },
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
-      crossOrigin: 'true',
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap',
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
-    },
-  ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* External CSS links ko yahan direct head tag mein daal diya hai */}
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-      </body>
-    </html>
+         {children}
+       </body>
+     </html>
   );
 }
