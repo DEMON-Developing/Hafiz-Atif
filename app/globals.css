@@ -77,28 +77,29 @@ h2 {
   text-align: center;
 }
 
-/* Skills section */
+/* Skills Section Styling */
 .skills-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Is line ko uncomment kar diya hai */
   justify-content: center;
   gap: 1rem;
 }
 
 .skills-list span {
   background: #0077b6;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  color: #fff; /* Text ka rang safed kiya hai */
+  padding: 0.75rem 1.5rem; /* Padding adjust ki hai */
+  border-radius: 25px; /* Border radius ko behtar kiya hai */
+  font-size: 1rem;
   font-weight: bold;
-  
-  /* Smooth transition for the hover effect */
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Aik halka sa shadow add kiya hai */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Transition ko behtar kiya hai */
 }
 
 /* Hover effect */
 .skills-list span:hover {
   transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Hover par shadow badha diya hai */
 }
 
 /* Contact form section */
@@ -183,4 +184,61 @@ footer {
         flex-direction: row;
         text-align: left;
     }
+}
+
+/* Quiz Section Styling */
+.quiz-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #111;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.question-section {
+    margin-bottom: 1rem;
+}
+
+.question-count {
+    font-size: 1.2rem;
+    color: #0077b6;
+    margin-bottom: 0.5rem;
+}
+
+.question-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.answer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.answer-section button {
+    padding: 1rem;
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.answer-section button:hover {
+    background-color: #005f99;
+}
+
+.score-section {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 1.4rem;
+    background: #0077b6;
+    border-radius: 8px;
 }
