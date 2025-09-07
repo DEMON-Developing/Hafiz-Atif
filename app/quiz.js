@@ -65,10 +65,10 @@ export const quizQuestions = [
       ],
     },
     {
-      questionText: 'Correct the sentence: “He don’t like mangoes.”',
+      questionText: 'Correct the sentence: “He don\'t like mangoes.”',
       answerOptions: [
         { answerText: 'He doesn\'t like mangoes.', isCorrect: true },
-        { answerText: 'He do\'t likes mangoes.', isCorrect: false },
+        { answerText: 'He don\'t likes mangoes.', isCorrect: false },
         { answerText: 'He don\'t liking mangoes.', isCorrect: false },
         { answerText: 'He don\'t like mango.', isCorrect: false },
       ],
@@ -101,7 +101,7 @@ export const quizQuestions = [
       ],
     },
     {
-      questionText: 'When did the World War begin and when did it end ?',
+      questionText: 'When did the World War began and when did it end ?',
       answerOptions: [
         { answerText: '1939-1945', isCorrect: true },
         { answerText: '1914-1918', isCorrect: false },
@@ -155,7 +155,7 @@ export const quizQuestions = [
       ],
     },
     {
-      questionText: '√144 = ?',
+      questionText: '√(144) = ?',
       answerOptions: [
         { answerText: '10', isCorrect: false },
         { answerText: '11', isCorrect: false },
@@ -166,9 +166,9 @@ export const quizQuestions = [
     {
       questionText: 'Solve it: 3x + 7 = 22 → x = ?',
       answerOptions: [
-        { answerText: '3', isCorrect: true },
+        { answerText: '3', isCorrect: false },
         { answerText: '4', isCorrect: false },
-        { answerText: '5', isCorrect: false },
+        { answerText: '5', isCorrect: true },
         { answerText: '6', isCorrect: false },
       ],
     },
